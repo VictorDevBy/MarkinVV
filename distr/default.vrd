@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		base="/distr"
+		ib="File=&quot;D:\Affairs\Учёба\Диплом\ОБ&quot;;">
+	<ws publishExtensionsByDefault="true">
+		<point name="MobileTrade"
+				alias="mt.1cws"
+				enable="true"
+				reuseSessions="dontuse"
+				sessionMaxAge="20"
+				poolSize="10"
+				poolTimeout="5"/>
+		<point name="ОбменСБухгалтерией"
+				alias="exchangeWithAccbe.1cws"
+				enable="false"
+				reuseSessions="autouse"
+				sessionMaxAge="20"
+				poolSize="10"
+				poolTimeout="5"/>
+	</ws>
+	<httpServices publishByDefault="false"/>
+	<standardOdata enable="true"
+			reuseSessions="autouse"
+			sessionMaxAge="20"
+			poolSize="10"
+			poolTimeout="5"/>
+	<analytics enable="true"/>
+</point>
